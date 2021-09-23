@@ -1,4 +1,4 @@
-public class SelfBalancedTress {
+public class SelfBalancedTree {
     public static void main(String[] args) {
 
     }
@@ -72,13 +72,13 @@ class AVLTree {
             if(treeNode.right != null) {
                 addElementToLocation(value, treeNode.right);
             } else{
-                treeNode.right = new TreeNode(value,null,null);
+                treeNode.right = new TreeNode(value,0,null,null);
             }
         } else {
             if(treeNode.left != null) {
                 addElementToLocation(value, treeNode.left);
             } else {
-                treeNode.left = new TreeNode(value,null,null);
+                treeNode.left = new TreeNode(value,0,null,null);
             }
         }
     }
